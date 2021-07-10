@@ -6,7 +6,7 @@ try:
     mongo = pymongo.MongoClient(
             host = "127.0.0.1",
             port = 12017,
-            serverSelectionTimeoutTM = 1000
+            serverSelectionTimeoutMS = 1000
             )
     db = mongo.students
     print(f"returned {db.status_code} success")
